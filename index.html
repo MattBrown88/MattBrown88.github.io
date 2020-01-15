@@ -62,11 +62,11 @@
 
   <!-- Animated Background -->
   <!-- <header class="masthead bg-primary text-white text-center"> -->
-    <!-- <div class="container"> -->
-      <div style="text-align: center; position: absolute;" class="context">
-        <h1>Matt Brown</h1>
-        <h2 style="color: white;">Software Consultant</h2>
-        <!-- <div style="display:inline-block;">
+  <!-- <div class="container"> -->
+  <div style="text-align: center; position: absolute;" class="context">
+    <h1>Matt Brown</h1>
+    <h2 style="color: white;">Software Consultant</h2>
+    <!-- <div style="display:inline-block;">
           <a target="_blank" href="https://drive.google.com/file/d/18Pqz30VZ2NJIfMQGxR8oz_taArtTdSz-/view?usp=sharing">
             <h3 style="color: white">Resume</h3>
           </a>
@@ -75,22 +75,22 @@
           </a>
         </div> -->
 
-      </div>
-      <div class="area">
-        <ul class="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    <!-- </div> -->
+  </div>
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <!-- </div> -->
   <!-- </header> -->
   <!-------------------------------------------------------------------------->
 
@@ -249,30 +249,42 @@
     </div>
   </section>
 
+  <hr>
+
   <!-- About Section -->
-  <section class="bg-primary text-white mb-0" id="about">
+  <section class="portfolio" id="portfolio">
     <div class="container">
-      <h2 class="text-center text-uppercase text-white">About</h2>
-      <hr class="star-light mb-5">
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Matt is a consultant specializing in the application of technology to increase efficiencies,
-            grow revenue and automate processes. He has experience with a wide variety of organizations through his
-            over
-            six years of professional experience in software development, data science, project management and
-            management consulting.
-          </p>
+      <!-- <section class="bg-primary text-white mb-0" id="about"> -->
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">About Matt</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="lead">Matt is a consultant specializing in the application of technology to increase efficiencies,
+              grow revenue and automate processes. He has experience with a wide variety of organizations through his
+              over
+              six years of professional experience in software development, data science, project management and
+              management consulting.
+            </p>
+          </div>
         </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead"> Specialties: Software development, data analysis, predictive modeling </br> </br>
-            <b>Languages:</b> Python, C#, R, SQL, JavaScript, HTML, CSS </br> </br>
-            <b>Frameworks and Packages: </b>.NET, Django, Shiny, AWS, React, Material UI, Kendo UI, Bootstrap, Stripe, Postgres, SQL Server, Highcharts, Plotly, Leaflet, Git </br> </br>
-            <b>Skills:</b> Web Application Development, Machine Learning, Object-Oriented Programming, Data Visualization </br> </br>
-          </p>
+        <div class="row">
+          <div class="col-lg-12">
+              <h3>Technical Skills</h3>
+              <b>Languages:</b> Python, C#, R, SQL, JavaScript, HTML, CSS </br> </br>
+              <b>Frameworks and Packages: </b>.NET, Django, Shiny, AWS, React, Material UI, Kendo UI, Bootstrap,
+              Stripe,
+              Postgres, SQL Server, Highcharts, Plotly, Leaflet, Git </br> </br>
+              <b>Skills:</b> Web Application Development, Machine Learning, Object-Oriented Programming, Data
+              Visualization </br> </br>
+          </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
+  <!-- </section> -->
+  <hr>
 
   <!-- Contact Section -->
   <section id="contact">
@@ -566,7 +578,8 @@
               I first built a model using all of the available variables.
               I then removed variables that were duplicates and tested the model to understand how it changed the
               performance.
-              I also used the xgb.importance function to understand the variable’s influence on the model. </br></br>
+              I also used the xgb.importance function to understand the variable’s influence on the model.
+              </br></br>
 
               I used an ensemble of XGBoost 11 XGBoost models only updating the random seed for each iteration.
               This turned out to be more accurate than a single XGBoost model with a large number of
