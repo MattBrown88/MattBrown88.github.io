@@ -29,6 +29,7 @@
 
   <link href="css/skills-table.css" rel="stylesheet">
   <link href="css/portfolio-slideshow.css" rel="stylesheet">
+  <link href="css/services.css" rel="stylesheet">
 
 
 </head>
@@ -67,14 +68,14 @@
   <div style="text-align: left; padding-left: 300px; position: absolute;" class="context">
     <h1 style="display: inline-block;">Hi, I'm Matt Brown</h1><br>
     <h5 style="width: 70%; display: inline-block; color: white;">
-      I'm a freelance software developer with over seven years of professional experience. I specialize in 
+      I'm a freelance software developer with over seven years of professional experience. I specialize in
       web application development, data visualization and machine learning.
 
-    </h2>
-    </br>
-    <a style="padding: 10px 20px; margin: 5px 0px; width: 200px; color: white; z-index: 1000; border: solid; position: relative"
-      class="nav-link py-3 px-1 px-lg-3 square js-scroll-trigger" href="#portfolio">View My Work</a>
-    <!-- <div style="display:inline-block;">
+      </h2>
+      </br>
+      <a style="text-align: center; padding: 10px 20px; margin: 5px 580px; width: 200px; color: white; z-index: 1000; border: solid; position: relative"
+        class="nav-link py-3 px-1 px-lg-3 square js-scroll-trigger" href="#portfolio">View My Work</a>
+      <!-- <div style="display:inline-block;">
           <a target="_blank" href="https://drive.google.com/file/d/18Pqz30VZ2NJIfMQGxR8oz_taArtTdSz-/view?usp=sharing">
             <h3 style="color: white">Resume</h3>
           </a>
@@ -106,21 +107,68 @@
   <!-- Slideshow container -->
   <section class="portfolio" id="portfolio">
     <div class="slideshow-container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Web Development</h2>
+      <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
       <hr class="star-dark mb-5">
       <!-- Full-width images with number and caption text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/portfolio/survey-app.png" style="width:100%">
+        <div class="text">
+          <p>
+            <b>Survey Analytics</b></br>
+            Built web application to ingest survey responses and
+            display analytics on the responses through data visualizations, statistical analysis and
+            dynamic pivot tables.
+          </p>
+          <p>
+            <b>Technologies: </b>PostgreSQL, Django, JavaScript, HTML, CSS, Bootstrap, Highcharts
+          </p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/portfolio/jptc5.png" style="width:100%">
+        <div class="text">
+          <p>
+            <b>Energy Trading Platform</b></br>
+            Built CRUD application using R Shiny for trading firm which aggregated data from multiple sources and
+            allowed them to submit trades and modify parameters.
+          </p>
+          <p>
+            <b>Technologies: </b>R Shiny, SQL Server, AWS, JavaScript, CSS, DataTables
+            
+          </p>
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/portfolio/dfs-main-image.png" style="width:100%">
+        <div class="text">
+          <p>
+            <b>Sports Analytics</b></br>
+            Build a tool which used machine learning to project daily player statistics and 
+            linear optimization to generate optimal lineups.
+          </p>
+          <p>
+            <b>Technologies: R Shiny</b>
+          </p>
+          <b>
+            <a style="color: white" href="https://premium.shinyapps.io/appfiles/" target="_blank">View Site</a> </b>
+        </div>
+      </div>
+
       <div class="mySlides">
         <div class="numbertext">1 / 3</div>
         <img src="img/portfolio/plastic-ocean-home.png" style="width:100%">
         <div class="text">
           <p>
-            <b>Project Overview</b></br>
+            <b>Donation Collection</b></br>
             Build a white-labeled platform to allow organizations to collect donations from users using the
             Stripe API.
           </p>
           <p>
-            <b>Technologies</b></br>
-            Django, React, Stripe, Material UI, AWS (S3, CloudFront, EC2)
+            <b>Technologies: </b>Django, React, Stripe, Material UI, AWS (S3, CloudFront, EC2)
+            
           </p>
           <b>
             <a style="color: white" href="http://www.plasticocean.club" target="_blank">View Site</a> </b>
@@ -133,65 +181,15 @@
         <img src="img/portfolio/athena-health-main.png" style="width:100%">
         <div class="text">
           <p>
-            <b>Project Overview</b></br>
+            <b>Health Care Analytics</b></br>
             Build customer onboarding application for Health Care Analytics organization using
             the Django web application development framework.
           </p>
           <p>
-            <b>Technologies</b></br>
-            Django, Heroku, JavaScript, HTML, CSS, Postgres
+            <b>Technologies: </b> Django, Heroku, JavaScript, HTML, CSS, Postgres
+            
           </p>
         </div>
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">3 / 3</div>
-        <img src="img/portfolio/jptc5.png" style="width:100%">
-        <div class="text">
-          <p>
-            <b>Project Overview</b></br>
-            Built CRUD application using R Shiny for trading firm which aggregated data from multiple sources and
-            allowed them to submit trades and modify parameters.
-          </p>
-          <p>
-            <b>Technologies</b></br>
-            R Shiny, SQL Server, AWS, JavaScript, CSS, DataTables
-          </p>
-        </div>
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">3 / 3</div>
-        <img src="img/portfolio/dfs-main-image.png" style="width:100%">
-        <div class="text">
-          <p>
-            <b>Project Overview</b></br>
-            Build a tool which used machine learning to project player performance and linear optimization
-            to generate optimal lineups.
-          </p>
-          <p>
-            <b>Technologies</b></br>
-            R Shiny
-          </p>
-          <b>
-            <a style="color: white" href="https://premium.shinyapps.io/appfiles/" target="_blank">View Site</a> </b>
-        </div>
-      </div>
-      <div class="mySlides">
-        <div class="numbertext">5 / 5</div>
-        <img src="img/portfolio/survey-app.png" style="width:100%">
-        <div class="text">
-          <p>
-            <b>Project Overview</b></br>
-            Built web application to ingest survey responses and 
-            display analytics on the responses through data visualizations, statistical analysis and 
-            dynamic pivot tables.
-          </p>
-          <p>
-            <b>Technologies</b></br>
-            PostgreSQL, Django, JavaScript, HTML, CSS, Bootstrap, Highcharts
-          </p>
-         </div>
       </div>
       <!-- Next and previous buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -205,149 +203,54 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
       <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
     </div>
   </section>
+
+  <hr>
 
   <!-- Portfolio Grid Section -->
   <section class="portfolio">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Data Science</h2>
+      <h2 class="text-center text-uppercase text-secondary mb-0">Services</h2>
       <hr class="star-dark mb-5">
       <div class="row">
-        <!-- <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-2x"> </br>
-                  Web Development
-                </i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/plasticocean.png" alt="">
-          </a>
+        <div class="col-md-6 col-lg-6">
+          <div class="services-header">
+            Web Application Development
+          </div>
+          <div class="services-text">
+            Design and build custom applications and APIs with complex data models to automate
+            business processes and improve user experience.
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-7">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-2x"> </br>
-                  Web Development
-                </i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/athena.png" alt="">
-          </a>
+        <div class="col-md-6 col-lg-6">
+          <div class="services-header">
+            Business Intelligence Implementation
+          </div>
+          <div class="services-text">
+            Help businesses implement the best business intelligence solution for their organization.
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-8">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-2x"> </br>Web Development </i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/jptc.png" alt="">
-          </a>
-        </div> -->
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-2x"> </br>
-                  Predictive Modeling
-                </i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/dfs.png" alt="">
-          </a>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <div class="services-header">
+            Predictive Modeling
+          </div>
+          <div class="services-text">
+            Use machine learning to improve business efficiencies.
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-2x"> </br>Predictive Modeling</i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/ts_thumb.png" alt="">
-          </a>
+        <div class="col-md-6 col-lg-6">
+          <div class="services-header">
+            Data Visualization
+          </div>
+          <div class="services-text">
+            Design impactful data visualizations using modern tools technical tools.
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-2x"> </br>Predictive Modeling</i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/datacompetition.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-2x"> </br>Tutorial</i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/reticulate.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-2x"> </br>Tutorial</i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/datatable.png" alt="">
-          </a>
-        </div>
-
-
-        <!-- <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="https://redoakstrategic.com/exploratory_data_analysis_cdc_500_cities_r_shiny_pt2/" onclick="window.open('https://redoakstrategic.com/exploratory_data_analysis_cdc_500_cities_r_shiny_pt2/')">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-2x"></br>Data Analysis</i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/Boxplot.png" alt="">
-            </a>
-          </div> -->
-        <!-- <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-2x"></br>Machine Learning Tutorial</i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/MachineLearning.jpg" alt="">
-            </a>
-          </div> -->
-        <!-- <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="https://premium.shinyapps.io/socialanalytics/" onclick="window.open('https://premium.shinyapps.io/socialanalytics/')">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-2x"> </br>
-                    Social Analytics
-                  </i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/SocialAnalytics.png" alt="">
-            </a>
-          </div> -->
-        <!-- <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="http://www.gedmathpractice.club"
-            onclick="window.open('http://www.gedmathpractice.club')">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-2x"> </br>
-                  Educational Application
-                </i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/GedMath.png" alt="">
-          </a>
-        </div> -->
       </div>
     </div>
   </section>
