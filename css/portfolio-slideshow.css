@@ -40,21 +40,6 @@
 }
 
 /* Caption text */
-/* .text {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 1px;
-  left: 250px;
-  align-self: center;
-  width: 50%;
-  text-align: left;
-  border: 1px;
-  background-color: lightgray;
-  opacity: .9;
-} */
-
 .text {
     position: absolute;
     right: 15%;
@@ -66,10 +51,8 @@
     padding-left: 20px;
     color: #fff;
     text-align: left;
-    background-color: rgba(0,0,0,0.65)
-
+    background-color: rgba(0,0,0,0.75)
 }
-
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -97,19 +80,48 @@
 }
 
 /* Fading animation */
+
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
-  animation-name: fade;
-  animation-duration: 1s;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+  animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: .5}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: .5}
-} 
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

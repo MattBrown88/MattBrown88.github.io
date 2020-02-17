@@ -19,10 +19,10 @@ h1, h2, h3, h4, h5, h6, p{
   border-radius:3px;
   /*width:500px;*/
   width: 100%;
-  margin:10px auto;
+  
   text-align:center;
   
-  padding: 5px;
+
   padding-bottom:20px;
   overflow:hidden;
 }

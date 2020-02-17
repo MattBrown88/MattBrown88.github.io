@@ -202,21 +202,21 @@ header.masthead h2 {
 }
 
 .portfolio {
-  margin-bottom: -15px;
+  margin-bottom: 0px;
 }
 
 .portfolio .portfolio-item {
-  position: relative;
+  /* position: relative;
   display: block;
   max-width: 25rem;
-  margin-bottom: 15px;
+  margin-bottom: 0px; */
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
-  -webkit-transition: all ease 0.5s;
+  /* -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background-color: rgba(24, 188, 156, 0.9);
+  background-color: rgba(24, 188, 156, 0.9); */
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -229,10 +229,10 @@ header.masthead h2 {
 
 @media (min-width: 576px) {
   .portfolio {
-    margin-bottom: -30px;
+    margin-bottom: 0px;
   }
   .portfolio .portfolio-item {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 }
 
