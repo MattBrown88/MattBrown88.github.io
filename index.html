@@ -23,7 +23,7 @@
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="css/freelancer.css" rel="stylesheet">
 
   <link href="css/animated-background.css" rel="stylesheet">
 
@@ -52,6 +52,13 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#technical-skills">Skills</a>
+          </li>
+
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
@@ -61,16 +68,14 @@
       </div>
     </div>
   </nav>
-
   <!-- Animated Background -->
   <!-- <header class="masthead bg-primary text-white text-center"> -->
   <!-- <div class="container"> -->
   <div style="text-align: left; padding-left: 300px; position: absolute;" class="context">
     <h1 style="display: inline-block;">Hi, I'm Matt Brown</h1><br>
     <h5 style="width: 70%; display: inline-block; color: white;">
-      I'm a freelance software developer with over seven years of professional experience. I specialize in
-      web application development, data visualization and machine learning.
-
+      I'm a freelance software developer with seven years of professional experience
+      specializing in web application development, data visualization and machine learning.
       </h2>
       </br>
       <a style="text-align: center; padding: 10px 20px; margin: 5px 580px; width: 200px; color: white; z-index: 1000; border: solid; position: relative"
@@ -103,6 +108,8 @@
   <!-- </header> -->
   <!-------------------------------------------------------------------------->
 
+
+
   <!-- new Portfolio Section -->
   <!-- Slideshow container -->
   <section class="portfolio" id="portfolio">
@@ -110,7 +117,7 @@
       <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
       <hr class="star-dark mb-5">
       <!-- Full-width images with number and caption text -->
-      <div class="mySlides">
+      <div class="mySlides fade">
         <div class="numbertext">1 / 5</div>
         <img src="img/portfolio/survey-app.png" style="width:100%">
         <div class="text">
@@ -125,9 +132,9 @@
           </p>
         </div>
       </div>
-      <div class="mySlides">
-        <div class="numbertext">3 / 3</div>
-        <img src="img/portfolio/jptc5.png" style="width:100%">
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/portfolio/jptc6.png" style="width:100%">
         <div class="text">
           <p>
             <b>Energy Trading Platform</b></br>
@@ -136,29 +143,33 @@
           </p>
           <p>
             <b>Technologies: </b>R Shiny, SQL Server, AWS, JavaScript, CSS, DataTables
-            
+
           </p>
         </div>
       </div>
-      <div class="mySlides">
-        <div class="numbertext">3 / 3</div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
         <img src="img/portfolio/dfs-main-image.png" style="width:100%">
         <div class="text">
           <p>
             <b>Sports Analytics</b></br>
-            Build a tool which used machine learning to project daily player statistics and 
+            Build a tool which used machine learning to project daily player statistics and
             linear optimization to generate optimal lineups.
           </p>
           <p>
             <b>Technologies: R Shiny</b>
           </p>
-          <b>
-            <a style="color: white" href="https://premium.shinyapps.io/appfiles/" target="_blank">View Site</a> </b>
+          <div style="text-align: center;">
+            <a class="btn btn-primary btn-md rounded-pill" href="https://premium.shinyapps.io/appfiles/">
+              <i class="fa fa-close"></i>
+              View Site
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="mySlides">
-        <div class="numbertext">1 / 3</div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
         <img src="img/portfolio/plastic-ocean-home.png" style="width:100%">
         <div class="text">
           <p>
@@ -168,16 +179,18 @@
           </p>
           <p>
             <b>Technologies: </b>Django, React, Stripe, Material UI, AWS (S3, CloudFront, EC2)
-            
           </p>
-          <b>
-            <a style="color: white" href="http://www.plasticocean.club" target="_blank">View Site</a> </b>
-
+            <div style="text-align: center;">
+              <a class="btn btn-primary btn-md rounded-pill" href="http://www.plasticocean.club">
+                <i class="fa fa-close"></i>
+                View Site
+              </a>
+            </div>
         </div>
       </div>
 
-      <div class="mySlides">
-        <div class="numbertext">2 / 3</div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
         <img src="img/portfolio/athena-health-main.png" style="width:100%">
         <div class="text">
           <p>
@@ -187,7 +200,7 @@
           </p>
           <p>
             <b>Technologies: </b> Django, Heroku, JavaScript, HTML, CSS, Postgres
-            
+
           </p>
         </div>
       </div>
@@ -207,10 +220,66 @@
     </div>
   </section>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <em>
+          "Matt did a great work engaging with us on short notice.
+          He teamed up with our SME to take the design of our solution and
+          turn it into an online resource in a very short period of time.
+          Matt was responsive, engaged, asked the right questions and
+          was able to provide a prototype early on and adopt additional edits
+          and feedback in the final solution."
+        </em>
+        <br>
+        <div style="text-align: right; font-weight: bold; font-style: italic;">
+          - FX C. at Healthcare Technology Co.
+        </div>
+      </div>
+      <div class="col-md-5 offset-md-1">
+        <em>
+          "Matt executed an R/Shiny app project on schedule,
+          communicating clearly and promptly throughout.
+          Strongly recommend his expertise and professionalism."
+        </em>
+        <div style="text-align: right; font-weight: bold; font-style: italic;">
+          - Alex, Data Visualization Project
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <em>
+          "Matthew(Matt) is an effective and dedicated small team leader...
+          he is a self-starter; leverages his exceptionally strong 
+          analytical skills to develop critical insights; and, able to apply business 
+          theory to create innovative, yet practical solutions...A fantastic individual 
+          that will enhance your organization's performance."
+        </em>
+        <div style="text-align: right; font-weight: bold; font-style: italic;">
+          - Mark W., Business Executive
+        </div>
+      </div>
+      <div class="col-md-5 offset-md-1">
+        <em>
+        "I have had the opportunity to work with Matt on multiple projects. 
+        Matt's strong analytical skills, project management skills, and 
+        ability to articulate his perspective well, even under pressure, 
+        were invaluable to our team and the outcomes of our projects. 
+        It has been a pleasure to work with Matt. Any organization would be 
+        lucky to have him as a team member."
+      </em>
+      <div style="text-align: right; font-weight: bold; font-style: italic;">
+        - Sarah S, Business School Colleague
+      </div>
+      </div>
+    </div>
+  </div>
   <hr>
 
   <!-- Portfolio Grid Section -->
-  <section class="portfolio">
+  <section class="portfolio" id="services">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Services</h2>
       <hr class="star-dark mb-5">
@@ -221,15 +290,18 @@
           </div>
           <div class="services-text">
             Design and build custom applications and APIs with complex data models to automate
-            business processes and improve user experience.
+            business processes and improve user experience. Rapidly prototype and
+            implement custom data-driven tools to replace add-hoc processes and spreadsheets.
           </div>
         </div>
         <div class="col-md-6 col-lg-6">
           <div class="services-header">
-            Business Intelligence Implementation
+            Business Intelligence
           </div>
           <div class="services-text">
-            Help businesses implement the best business intelligence solution for their organization.
+            Ad-hoc reports, interactive dashboards and data visualization tools to
+            share analytical results with your workforce. Help you navigate the
+            complex array of tools to choose what is best for your business.
           </div>
         </div>
       </div>
@@ -240,21 +312,88 @@
             Predictive Modeling
           </div>
           <div class="services-text">
-            Use machine learning to improve business efficiencies.
+            Build models using machine learning which provide your employees
+            the information they need to make informed decisions.
           </div>
         </div>
         <div class="col-md-6 col-lg-6">
           <div class="services-header">
-            Data Visualization
+            Analytical Assessment
           </div>
           <div class="services-text">
-            Design impactful data visualizations using modern tools technical tools.
+            Use our <a class="portfolio-item" href="#assessment-modal">Analytics Assessment</a> to understand
+            current state of your data systems and identify opportunities to
+            apply data science to improve business efficiencies.
           </div>
         </div>
       </div>
     </div>
   </section>
+  <hr>
 
+  <!-- Skills Section -->
+  <section id="technical-skills">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Technical Skills</h2>
+      <hr class="star-dark mb-5">
+      <p style="text-align: center;">I have extensive experience with the following technologies:</p> 
+      <div class="row justify-content-around mt-3">
+        <div class="card col-md-3 col-sm-6 border-0">
+          <img style="height: 60px; width: 50%" src="img/logos/python-logo-master-v3-TM.png" class="card-img-top-icon"
+            alt="Python logo">
+          <div class="card-body">
+            <h5 class="card-title">Python 3</h5>
+          </div>
+        </div>
+        <div class="card col-md-3 col-sm-6 border-0">
+          <img style="height: 60px; width: 50%" src="img/logos/django-logo-positive.png" class="card-img-top-icon" alt="Django logo">
+          <div class="card-body">
+            <h5 class="card-title">Django</h5>
+          </div>
+        </div>
+        <div class="card col-md-3 col-sm-6 border-0">
+          <img style="height: 60px; width: 30%;" src="img/logos/Rlogo.png" class="card-img-top-icon"
+            alt="R Programming Language Logo">
+          <div class="card-body">
+            <h5 class="card-title">R</h5>
+          </div>
+        </div>
+        <div class="card col-md-3 col-sm-6 border-0">
+          <img style="height: 60px; width: 30%;" src="img/logos/Shiny.png" class="card-img-top-icon" alt="R Shiny Logo">
+          <div class="card-body">
+            <h5 class="card-title">R Shiny</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around mt-3">
+        <div class="card col-md-3 col-sm-6 border-0">
+          <img style="height: 60px; width: 30%" src="img/logos/PostgreSQL_logo.png" class="card-img-top-icon" alt="Postgres logo">
+          <div class="card-body">
+            <h5 class="card-title">PostgreSQL</h5>
+          </div>
+        </div>
+        <div class="card col-md-3 col-sm-6 border-0">
+          <img style="height: 60px; width: 50%" src="img/logos/aws.png" class="card-img-top-icon" alt="AWS logo">
+          <div class="card-body">
+            <h5 class="card-title">AWS</h5>
+            <p class="card-text">EC2, S3, RDS, CloudFront</p>
+          </div>
+        </div>
+        <div class="card col-md-3 col-sm-6 border-0">
+          <img style="height: 60px; width: 30%;" src="img/logos/dotnet.png" class="card-img-top-icon" alt="Dot NET Logo">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft .NET</h5>
+          </div>
+        </div>
+        <div class="card col-md-3 col-sm-6 border-0">
+          <img style="height: 60px; width: 70%;" src="img/logos/html.png" class="card-img-top-icon" alt="HTML CSS JavaScript Logo">
+          <div class="card-body">
+            <h5 class="card-title">HTML / CSS / JavaScript</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <hr>
 
   <!-- About Section -->
@@ -266,162 +405,34 @@
         <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-lg-3">
-            <img src="img/PortfolioMe.png">
-            <p>I am a software developer who specializes in web application development,
-              statistical modeling and designing impactful data visualizations.
+            <img src="img/matt3.jpg">
+          </div>
+          <div class="col-lg-8">
+            <p style="text-align: justify;">
+              I am a freelance software developer who currently resides in Iowa City, IA.
+              I have worked in various data science and software development roles over
+              the past four years. My go-to technical stack is Python / PostgreSQL but I'm
+              very comfortable programming in C#, ASP.NET and R as well.
+
+              <br><br>
+              Designing and building easy to use, user-friendly websites and applications is truly a
+              passion of mine and I am confident I would be an excellent addition to your organization.
+              In addition to my knowledge base, I actively seek out new technologies and stay up-to-date
+              on industry trends and advancements. This has allowed me to stay ahead of the curve and
+              deliver exceptional work to all of my employers.
+
+              <br><br>
+              Outside of work, you can often find me on a basketball court jacking up ill-advised
+              three pointers.
+
             </p>
+
           </div>
-          </br>
-          <div class="col-lg-1"></div>
-          <div class="col-lg-6">
-            <!-- Skills Table -->
-            <div class="skills-container">
-              <div class="skills">
-                <div class="border">
-                  <table>
-                    <thead>
-                      <tr>
-                        <td>Language</td>
-                        <td>Level</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Python</td>
-                        <td><span class="percent">90%</span>
-                          <div class="bar one">
-                            <div class="fill" style="width:90%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>R</td>
-                        <td>
-                          <span class="percent">90%</span>
-                          <div class="bar one">
-                            <div class="fill" style="width:90%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                      <tr>
-                        <td>C#</td>
-                        <td><span class="percent">80%</span>
-                          <div class="bar one">
-                            <div class="fill" style="width:80%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>SQL (Postgres, SQL Server)</td>
-                        <td><span class="percent">80%</span>
-                          <div class="bar one">
-                            <div class="fill" style="width:80%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>JavaScript</td>
-                        <td><span class="percent">70%</span>
-                          <div class="bar one">
-                            <div class="fill" style="width:85%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>HTML / CSS</td>
-                        <td><span class="percent">70%</span>
-                          <div class="bar one">
-                            <div class="fill" style="width:80%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Matlab</td>
-                        <td><span class="percent">40%</span>
-                          <div class="bar two">
-                            <div class="fill" style="width:40%;"></div>
-                          </div>
-                        </td>
-                      </tr>
 
-                      <thead>
-                        <tr>
-                          <td>Framework</td>
-                          <td>Level</td>
-                        </tr>
-                      </thead>
-                      <tr>
-                        <td>R Shiny</td>
-                        <td><span class="percent">100%</span>
-                          <div class="bar one">
-                            <div class="fill" style="width:100%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Django</td>
-                        <td><span class="percent">90%</span>
-                          <div class="bar one">
-                            <div class="fill" style="width:90%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>.Net</td>
-                        <td><span class="percent">90%</span>
-                          <div class="bar one">
-                            <div class="fill" style="width:90%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Git</td>
-                        <td><span class="percent">80%</span>
-                          <div class="bar one">
-                            <div class="fill" style="width:80%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>AWS</td>
-                        <td><span class="percent">60%</span>
-                          <div class="bar two">
-                            <div class="fill" style="width:60%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="last">React</td>
-                        <td class="last"><span class="percent">30%</span>
-                          <div class="bar two">
-                            <div class="fill" style="width:30%;"></div>
-                          </div>
-                        </td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-            <!---------------------------------------------------------------------------------------->
-            <!-- <h3>Technical Skills</h3>
-            <div style="padding: 10px 10px 10px 10px">
-              <p>
-                <b>Languages:</b> Python, C#, R, SQL, JavaScript, HTML, CSS </br> </br>
-                <b>Frameworks and Packages: </b>.NET, Django, Shiny, AWS, React, Material UI, Kendo UI, Bootstrap,
-                Stripe,
-                Postgres, SQL Server, Highcharts, Plotly, Leaflet, Git </br> </br>
-                <b>Skills:</b> Web Application Development, Machine Learning, Object-Oriented Programming, Data
-                Visualization
-              </p>
-
-            </div> -->
-          </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   </section>
   <!-- </section> -->
@@ -491,31 +502,18 @@
         <div class="col-md-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Around the Web</h4>
           <ul class="list-inline mb-0">
-            <!-- <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-google-plus-g"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-twitter"></i>
-                </a>
-              </li> -->
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                href="https://www.linkedin.com/in/matthew-brown-44b91017/">
                 <i class="fab fa-fw fa-linkedin-in"></i>
               </a>
             </li>
-            <!-- <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-dribbble"></i>
-                </a>
-              </li> -->
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                href="https://github.com/MattBrown88/">
+                <i class="fab fa-fw fa-github"></i>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -540,6 +538,89 @@
   </div>
 
   <!-- Portfolio Modals -->
+
+
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal mfp-hide" id="assessment-modal">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 style="text-align: center;" class="text-secondary text-uppercase mb-0">ANALYTICS ASSESSMENT</h2>
+            <hr class="star-dark mb-5">
+            <h2>OVERVIEW</h2>
+            Business leaders today understand the importance of business intelligence (BI), advanced analytics and
+            machine
+            learning in driving successful business outcomes. They have seen examples of how data has revolutionized
+            industries.
+            However it is not always clear how to implement data-driven decision making.
+            Each business is unique but there are certain best practices that persist across organizations.
+            <ul style="margin-top: 10px; margin-left: 30px">
+              <li>
+                Develop a coherent strategy with clear project goals
+              </li>
+              <li>
+                Define specific goals, measurable goals for each project
+              </li>
+            </ul>
+
+            Our Analytics Assessment can help your organization identify the most valuable projects to tackle.
+            <br><br>
+            <h2>ASSESSMENT PROCESS</h2>
+
+            <h3>Initial Discussion</h3>
+
+            <p>During the initial consultation, we will discuss your current data science capabilities and the biggest
+              issues at
+              your firm. We want to gain a better understanding of your business to identify the areas of greatest
+              potential
+              improvement and most pressing business needs. We also begin to discuss the analytical requirements for
+              these
+              business needs.
+            </p>
+            <br>
+            <h3>Exploratory Analysis</h3>
+            <p>
+              Analyze your data assets to determine if the data is available to effectively
+              complete the projects identified in the opportunity assessment.
+              Identify gaps and missing data, and determine the effects of this on the project
+              opportunities.
+            </p>
+            <br>
+            <h3>Opportunity Assessment</h3>
+            <ul style="margin-top: 10px; margin-left: 30px">
+              <li>
+                Identify Opportunities
+              </li>
+              <li>
+                Evaluate the potential value of each
+              </li>
+              <li>
+                Determine which should be addressed first
+              </li>
+            </ul>
+            <br>
+            <h2>OUTCOMES</h2>
+            Our organization assessment results in the following:
+            <ul style="margin-top: 10px; margin-left: 30px">
+              <li>A list of opportunities and their potential value to the organization</li>
+              <li>A roadmap of next steps</li>
+            </ul>
+
+            <br>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Portfolio Modal 1 -->
   <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
@@ -574,44 +655,6 @@
             </a>
             <img class="img-fluid mb-5" src="img/portfolio/plasticocean1.png" alt="">
             <img class="img-fluid mb-5" src="img/portfolio/plasticocean2.png" alt="">
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="text-align: center;" class="text-secondary text-uppercase mb-0">Sports Analytics</h2>
-            <hr class="star-dark mb-5">
-            <p>
-              <b>Project Overview</b></br>
-              Build a a tool which used machine learning to project player performance and linear optimization
-              to generate optimal lineups.
-            </p>
-            <p>
-              <b>Challenges</b></br>
-              The main challenge of this project was that this was my first web application so
-              everything was challenging.
-            </p>
-            <p>
-              <b>Technologies</b></br>
-              R Shiny
-            </p>
-            <b>Application</b>
-            <a href="https://premium.shinyapps.io/appfiles/" target="_blank">
-              <img class="img-fluid mb-5" src="img/portfolio/dfs-main.png" alt="">
-            </a>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
               Close Project</a>
@@ -760,78 +803,6 @@
     </div>
   </div>
 
-  <!-- Portfolio Modal 7 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-7">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="text-align: center;" class="text-secondary text-uppercase mb-0">Web Development</h2>
-            <hr class="star-dark mb-5">
-            <p>
-              <b>Project Overview</b></br>
-              Build customer onboarding application for Health Care Analytics organization using
-              the Django web application development framework.
-            </p>
-            <p>
-              <b>Challenges</b></br>
-              The main challenge of this project was converting a spreadsheet solution into a web application.
-            </p>
-            <p>
-              <b>Technologies</b></br>
-              Django, Heroku, JavaScript, HTML, CSS, Postgres
-            </p>
-            <b>Screenshots</b>
-            <img class="img-fluid mb-5" src="img/portfolio/athena1.png" alt="">
-            <img class="img-fluid mb-5" src="img/portfolio/athena2.png" alt="">
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 7 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-8">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="text-align: center;" class="text-secondary text-uppercase mb-0">Web Development</h2>
-            <hr class="star-dark mb-5">
-            <p>
-              <b>Project Overview</b></br>
-              Built CRUD application using R Shiny for trading firm which aggregated data from multiple sources and
-              allowed them to submit trades and modify parameters.
-            </p>
-            <p>
-              <b>Challenges</b></br>
-              The main challenge of this project was adding spreadsheet like functionality to a web application.
-            </p>
-            <p>
-              <b>Technologies</b></br>
-              R Shiny, SQL Server, AWS, JavaScript, CSS, DataTables
-            </p>
-            <b>Screenshots</b>
-            <img class="img-fluid mb-5" src="img/portfolio/jptc1.png" alt="">
-            <img class="img-fluid mb-5" src="img/portfolio/jptc2.png" alt="">
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -880,8 +851,6 @@
       dots[slideIndex - 1].className += " active";
     }
   </script>
-
-
 </body>
 
 </html>
