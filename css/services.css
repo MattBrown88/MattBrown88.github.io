@@ -1,12 +1,19 @@
+.services-box {
+    border-style: outset;
+    color: inherit;
+    padding: 5px;
+    height: 250px;
+}
+
 .services-header {
-    border: black;
-    background-color: lightgray;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
     padding: 10px;
+    background-color: #2C3E50;
+    color: white;
 }
 
 .services-text {
-    border: black;
+    padding: 10px;
 }

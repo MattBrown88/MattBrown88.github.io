@@ -54,7 +54,7 @@ tbody td:nth-child(2) .percent{
 .bar{
   width:200px;
   height:20px;
-  border:solid 5px #3F4244;
+  border:solid 5px #2C3E50;
   border-radius:3px;
   margin: 5px 1px;
   overflow: hidden;
@@ -66,7 +66,7 @@ tbody td:nth-child(2) .percent{
 }
 .one .fill{
   width:0%;
-  background:#308ACA;
+  background: #18BC9C;
   border-radius:1px;
   animation: barOne .4s linear;
   -webkit-animation:barOne .4s linear;
