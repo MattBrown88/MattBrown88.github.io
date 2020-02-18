@@ -11,16 +11,34 @@ body{
 
 
 .context {
-    width: 100%;
+    width: 70%;
     position: absolute;
-    top:50vh;
-    
+    top:40vh;
+    text-align: center;
 }
 
 .context h1{
     text-align: center;
     color: #fff;
     font-size: 50px;
+    display: inline-block;
+}
+
+.context h5 {
+    text-align: center;
+    display: inline-block; 
+    color: white;
+}
+
+.context a {
+    text-align: center; 
+    display: inline-block; 
+    padding: 10px 20px; 
+    width: 200px; 
+    color: white; 
+    z-index: 1000; 
+    border: solid; 
+    position: relative;
 }
 
 
