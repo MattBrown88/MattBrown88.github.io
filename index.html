@@ -31,7 +31,9 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -57,6 +59,8 @@
     <!-- Appzi: Capture Insightful Feedback -->
     <script async src="https://w.appzi.io/bootstrap/bundle.js?token=1hCXa"></script>
     <!-- End Appzi -->
+
+
 </head>
 
 <body id="page-top">
@@ -130,7 +134,7 @@
     <!-- End Appzi -->
     <!-- Slideshow container -->
     <section class="portfolio" id="portfolio">
-        <div class="slideshow-container">
+        <div data-aos="fade-up" class="slideshow-container">
             <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
             <hr class="star-dark mb-5">
             <!-- Full-width images with number and caption text -->
@@ -244,7 +248,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div data-aos="fade-up-right" class="col-md-6">
                 <em>
           "Matt did a great work engaging with us on short notice.
           He teamed up with our SME to take the design of our solution and
@@ -258,7 +262,7 @@
                     - FX C. at Healthcare Technology Co.
                 </div>
             </div>
-            <div class="col-md-5 offset-md-1">
+            <div data-aos="fade-up-left" class="col-md-5 offset-md-1">
                 <em>
           "Matt executed an R/Shiny app project on schedule,
           communicating clearly and promptly throughout.
@@ -271,7 +275,7 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-md-6">
+            <div data-aos="fade-up-right" class="col-md-6">
                 <em>
           "Matthew(Matt) is an effective and dedicated small team leader...
           he is a self-starter; leverages his exceptionally strong
@@ -283,7 +287,7 @@
                     - Mark W., Business Executive
                 </div>
             </div>
-            <div class="col-md-5 offset-md-1">
+            <div data-aos="fade-up-left" class="col-md-5 offset-md-1">
                 <em>
           "I have had the opportunity to work with Matt on multiple projects.
           Matt's strong analytical skills, project management skills, and
@@ -305,7 +309,7 @@
         <div class="container">
             <h2 class="text-center text-uppercase text-secondary mb-0">Services</h2>
             <hr class="star-dark mb-5">
-            <div class="row">
+            <div data-aos="flip-up" class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="services-box">
                         <div class="services-header">
@@ -351,18 +355,40 @@
             </div>
         </div>
     </section>
+
+    <hr>
+    <!-- About Section -->
+    <section class="portfolio" id="about">
+        <div data-aos="zoom-in-down" class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">About Matt</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="img/matt3.jpg">
+                </div>
+                <div class="col-lg-8">
+                    <p style="text-align: justify;">
+                        I am a freelance software developer living in Iowa City, IA. I have worked in various data science and software development roles over the past four years. My go-to technical stack is Python / PostgreSQL but I'm very comfortable programming in C#, ASP.NET
+                        and R as well.
+                        <br><br> Designing and building easy to use, user-friendly websites and applications is truly a passion of mine and I am confident I would be an excellent addition to your organization. In addition to my knowledge base, I actively
+                        seek out new technologies and stay up-to-date on industry trends and advancements. This has allowed me to stay ahead of the curve and deliver exceptional work to all of my employers.
+                        <br><br> Outside of work, you can often find me on a basketball court jacking up ill-advised three pointers.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
     <hr>
     <section id="about">
-        <div class="container">
+        <div data-aos="zoom-in-down" class="container">
             <h2 class="text-center text-uppercase text-secondary mb-0">EDUCATION AND EXPERIENCE</h2>
             <hr class="star-dark mb-5">
             <div class="row no-gutters">
                 <div style="background-color: inherit; border: solid; border-radius: 20px;" class="col-md-4 ftco-animate py-5 nav-link-wrap fadeInUp ftco-animated">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link px-4 show active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="false">
-                            <span class="mr-3 flaticon-ideas"></span> About</a>
-                        <a class="nav-link px-4" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-1" aria-selected="false">
-                            <span class="mr-3 flaticon-ideas"></span> Software Development Consultant</a>
+                        <a class="nav-link px-4 show active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-1" aria-selected="false">
+                            <span class="mr-3 flaticon-ideas"></span> Software Consultant</a>
 
                         <a class="nav-link px-4 show" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-2" aria-selected="false">
                             <span class="mr-3 flaticon-flasks"></span> Senior Data Scientist</a>
@@ -382,32 +408,48 @@
                 <div class="col-md-8 ftco-animate d-flex align-items-center fadeInUp ftco-animated">
 
                     <div class="tab-content pl-md-5 " id="v-pills-tabContent">
-                        <div class="tab-pane fade active show" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="img/matt3.jpg">
-                                </div>
-                                <div class="col-lg-7">
-                                    <p style="text-align: justify;">
-                                        I am a freelance software developer living in Iowa City, IA. I generally build Python based web applications but am comfortable with a variety of languages. Designing and building easy to use, user-friendly websites and applications is truly a passion
-                                        of mine.
 
-                                        <br><br> Outside of work, you can often find me on a basketball court jacking up ill-advised three pointers.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                        <div class="tab-pane fade active show" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-1-tab">
                             <h4>Freelance</h4>
                             <h6 style="display:inline">Full Stack Developer</h6><span style="text-align:right;display:inline"> (June
                 2019 - Present) </span>
                             <hr>
-                            <span>
-                Offer advisory services to clients looking build custom web applications and integrate
-                technological solutions into their business workflows. More details on specific projects
-                shown in the Portfolio section.
-              </span>
+                            <h5>Example Projects:</h5>
+                            <ul>
+                                <li style="font-weight: bold;">AI-powered Digital Asset Management Solution for Designers (Python, Django, Postgres, JavaScript, AWS, Heroku)</li>
+                                <ul style="padding-left: 20px;">
+                                    <li>Store, organize, search, download and tag media assets</li>
+                                    <li>Integrates with Instagram and Pinterest APIs to automatically import media</li>
+                                    <li>Automatically tags images with keywords and colors using AI</li>
+                                </ul>
+                                <li style="font-weight: bold;">Donation Collection Platform (Django, React, Postgres, Stripe, AWS)</li>
+                                <ul style="padding-left: 20px;">
+                                    <li>Setup recurring client donations through the Stripe API</li>
+                                    <li>Display donaVon analyVcs pulled from the Stripe API</li>
+                                    <li>Used AWS CloudFront to create separate site skins / domains</li>
+                                </ul>
+                                <li style="font-weight: bold;">Energy Trading Application (R Shiny, SQL Server, AWS, JavaScript, HighCharts)
+                                </li>
+                                <ul style="padding-left: 20px;">
+                                    <li>Aggregates data from multiple sources, and display stats and data visualizations</li>
+                                    <li>Users can submit and delete trades from their trade queue</li>
+                                    <li>Users can modify parameters to determine ROI of potential trades</li>
+                                    <li>Automated a complex workflow of excel spreadsheets and scripts into a web application</li>
+                                </ul>
+                                <li style="font-weight: bold;">Health Care Customer Onboarding (Django, Postgres, Heroku)
+                                </li>
+                                <ul style="padding-left: 20px;">
+                                    <li>Updated customer onboarding process to web application from what was a series of Excel spreadsheets
+                                    </li>
+                                    <li>Automatically notified admins when customers completed the onboarding process</li>
+                                </ul>
+                                <li style="font-weight: bold;">Survey Ingestion and Analytics (Django, Azure, Postgre, JavaScript, Bootstrap, Highcharts)
+                                </li>
+                                <ul style="padding-left: 20px;">
+                                    <li>Ingested raw survey results and matched id answers to keywords</li>
+                                    <li>Displayed analytics on the results through data visualizations, statistical analysis and dynamic pivot tables</li>
+                                </ul>
+                            </ul>
                         </div>
 
                         <div class="tab-pane fade py-5" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-2-tab">
@@ -493,149 +535,61 @@
             </div>
         </div>
     </section>
+    <hr>
 
     <!-- Skills Section -->
-    <section id="technical-skills">
+    <section data-aos="zoom-in-down" id="technical-skills">
         <div class="container">
             <h2 class="text-center text-uppercase text-secondary mb-0">Languages and Frameworks</h2>
             <hr class="star-dark mb-5">
             <p style="text-align: center;">I have experience with the following technologies:</p>
+            <br>
             <div class="row justify-content-around mt-3">
                 <div class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 50%; align-self: center;" src="img/logos/python-logo-master-v3-TM.png" class="card-img-top-icon" alt="Python logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">90%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:90%;"></div>
-                                <div class="fill" style="width:90%;"></div>
-                            </div>
-                        </h5>
-                    </div>
                 </div>
                 <div class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 50%; align-self: center;" src="img/logos/django-logo-positive.png" class="card-img-top-icon" alt="Django logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">90%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:90%;"></div>
-                                <div class="fill" style="width:90%;"></div>
-                            </div>
-                        </h5>
-                    </div>
                 </div>
                 <div class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 30%; align-self: center;" src="img/logos/Rlogo.png" class="card-img-top-icon" alt="R Programming Language Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">80%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:90%;"></div>
-                                <div class="fill" style="width:90%;"></div>
-                            </div>
-                        </h5>
-                    </div>
                 </div>
                 <div class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 30%; align-self: center;" src="img/logos/Shiny.png" class="card-img-top-icon" alt="R Shiny Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">100%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:100%;"></div>
-                                <div class="fill" style="width:100%;"></div>
-                            </div>
-                        </h5>
-                    </div>
+
                 </div>
             </div>
+            <br>
             <div class="row justify-content-around mt-3">
                 <div class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 30%; align-self: center;" src="img/logos/PostgreSQL_logo.png" class="card-img-top-icon" alt="Postgres logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">80%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:80%;"></div>
-                                <div class="fill" style="width:80%;"></div>
-                            </div>
-                        </h5>
-                    </div>
+
                 </div>
                 <div style="text-align: center;" class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 50%;  align-self: center;" src="img/logos/aws.png" class="card-img-top-icon" alt="AWS logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">75%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:75%;"></div>
-                                <div class="fill" style="width:75%;"></div>
-                            </div>
-                        </h5>
-                    </div>
+
                 </div>
                 <div class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 30%; align-self: center;" src="img/logos/dotnet.png" class="card-img-top-icon" alt="Dot NET Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">75%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:75%;"></div>
-                                <div class="fill" style="width:75%;"></div>
-                            </div>
-                        </h5>
-                    </div>
+
                 </div>
                 <div class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 70%; align-self: center;" src="img/logos/html.png" class="card-img-top-icon" alt="HTML CSS JavaScript Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">75%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:75%;"></div>
-                                <div class="fill" style="width:75%;"></div>
-                            </div>
-                        </h5>
-                    </div>
+
                 </div>
             </div>
+            <br>
             <div class="row justify-content-around mt-3">
                 <div class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 50%; align-self: center;" src="img/logos/azurelogo.png" class="card-img-top-icon" alt="HTML CSS JavaScript Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">70%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:70%;"></div>
-                                <div class="fill" style="width:70%;"></div>
-                            </div>
-                        </h5>
-                    </div>
+
                 </div>
                 <div class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 30%; align-self: center;" src="img/logos/react.png" class="card-img-top-icon" alt="HTML CSS JavaScript Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">40%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:40%;"></div>
-                                <div class="fill" style="width:40%;"></div>
-                            </div>
-                        </h5>
-                    </div>
+
                 </div>
                 <div class="card col-md-3 col-sm-6 border-0">
                     <img style="height: 60px; width: 70%; align-self: center;" src="img/logos/matlab.png" class="card-img-top-icon" alt="HTML CSS JavaScript Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="percent">40%</span>
-                            <div class="bar one">
-                                <div class="fill" style="width:40%;"></div>
-                                <div class="fill" style="width:40%;"></div>
-                            </div>
-                        </h5>
-                    </div>
                 </div>
             </div>
         </div>
@@ -643,7 +597,7 @@
     <!-- </section> -->
     <hr>
     <!-- About Section -->
-    <section class="portfolio" id="blog">
+    <section data-aos="zoom-in-down" class="portfolio" id="blog">
         <div class="container">
             <!-- <section class="bg-primary text-white mb-0" id="about"> -->
             <div class="container">
@@ -673,7 +627,7 @@
     <hr>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section data-aos="zoom-in-down" id="contact">
         <div class="container">
             <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
             <hr class="star-dark mb-5">
@@ -1108,6 +1062,10 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 
     <!-- Slideshow js -->
