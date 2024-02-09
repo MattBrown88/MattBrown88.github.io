@@ -4358,6 +4358,7 @@ input[name="carousel"] { display: none; }
 
 .typing-demo {
     width: 22ch;
+    max-width: 90vw; /* Ensure it doesn't exceed the viewport width */
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -4377,3 +4378,9 @@ input[name="carousel"] { display: none; }
       border-color: transparent
     }
   }
+
+  @media (min-width: 600px) {
+    .typing-demo {
+        width: 22ch; /* Keep fixed width for larger screens if desired */
+    }
+}
