@@ -1,0 +1,30 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # or the branch you are using for deployment
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build and Deploy
+        run: |
+          # Add your build steps here if any (e.g., npm install && npm run build)
+          # For static sites without build steps, simply copy files to the output directory
+          mkdir -p output
+          cp -r * output/
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output  # Adjust this to your output directory
