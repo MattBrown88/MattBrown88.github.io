@@ -8,23 +8,3 @@ on:
 permissions:
   id-token: write
   contents: read
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Build and Deploy
-        run: |
-          # Add your build steps here if any (e.g., npm install && npm run build)
-          # For static sites without build steps, copy files to a temporary directory
-          mkdir -p temp_output
-          cp -r $(ls -A | grep -v '^temp_output$') temp_output/
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./temp_output  # Adjust this to your output directory
